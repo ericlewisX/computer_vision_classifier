@@ -1,6 +1,3 @@
-# trafficsignclassifier
-This is a project for a classifier for differentiating between different traffic signs. 
-
 ![Last Update](https://img.shields.io/badge/last%20change-September%20--%2015%20--%202021%20-yellowgreen)
 # A Glimpse into Automotive Computer Vision Using Convolutional Neural Networks
 Galvanize Capstone Project: A Glimpse into Automotive Computer Vision Using Convolutional Neural Networks
