@@ -6,36 +6,32 @@ This is a project for a classifier for differentiating between different traffic
 Galvanize Capstone Project: A Glimpse into Automotive Computer Vision Using Convolutional Neural Networks
 
 ## Objective
-The objective of this project is to introduce the field of computer vision and how it is implemented in smart cars. "[Computer Vision](https://www.ibm.com/topics/computer-vision) is a field of Artificial Intelligence that enables computers and systems to extract meaningful information from images, videos, and other visual inputs.
+The objective of this project is to introduce the field of computer vision and how it is implemented in smart cars. It won't be long until we all have a vehicle with some type of smart technology in it and it would be nice if everyone has a basic understanding of what goes on in the brain of their car. 
 
-I'm  choosing the automotive industry because over the years, as you can see consumer confidence in self driving cars has slowly picked up. 
+## Understanding the Motivation 
+[Computer Vision](https://www.ibm.com/topics/computer-vision) is a field of Artificial Intelligence that enables computers and systems to extract meaningful information from images, videos, and other visual inputs.
 
-## Understanding the Motivation / Potential Use-Cases TODO
-The primary motivation of this project is money with the target enitities being Record Labels or Music Artists.
-It can be extremely lucrative if there is a way to stop either a Record Label or an individual artist from wasting their capital and time on songs that are mathematically proven to not be a success and instead divert those valuable resources to songs that can be popular.
+![Statista](images/statista.jpeg)
 
-## Proposed Solution 
-The proposed solution is to make a model that can predict the success of a song. Success for this predictive model is defined as if the song in question can land any spot on Billboard's U.S Hot 100 Chart.
+I'm  choosing the automotive industry because over the years, as you can see consumer confidence in self driving cars has slowly picked up. This is probably because of the advancements in sensor technology and the refinement of Data Science techniques. 
+
+This project will showcase one of those techniques, the Convolutional Neural Network, and how it can be used for image classification in relation to the requirements of smart automobiles. 
 
 ## Data - Datasets Origin
-The data was scraped by another data scientist and comes from Billboard’s The Hot 100 chart:  
-* The Hot 100 Chart covers the top songs in the United States every week all the way since the Chart’s inception in 1958. 
-  * [https://data.world/kcmillersean/billboard-hot-100-1958-2017](https://data.world/kcmillersean/billboard-hot-100-1958-2017)
-* I also used a kaggle dataset to splice in random tracks so there is a balance between the number of tracks that made it to the top and those that didn’t.
-  * [https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) [Removed as of September 2, 2021]
+The data is from the [German Traffic Sign Recgonition Benchmark](https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) dataset hosted on kaggle.
+
+![German Traffic Dataset](images/german_traffic_sign_dataset.png)
 
 ## Data
-The structure of the cleaned data was a list of 48 thousand songs where each entry is a song with some of its properties. This is a list of all the properties:
-![The Track Properties](images/TrackProperties.png)
-An example of an entry of the dataset is: 
-![Sample Track](images/TrackSampleElvis.png)
+The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
 
-An additional column is added where the value is one hot encoded if the song reached the top 100 chart. 
-This plot shows the structure of the cleaned dataset.
-![Balanced_DF](plots/balanced_df.png)
+## Data Distribution
+The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
 
-## Methodology
-### The Models
+## Data Augmentation
+The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
+
+## Convolutional Neural Network
 We'll start with a `train_test_split` to get our Training and Test Data.
 
 Our baseline will be a Logistic Regression Model where the features are the track properties columns and the target is the one hot encoded column that denotes if the track is a member of the Hot 100 Chart.
@@ -121,6 +117,9 @@ The results of the each of the models are shown in the table below:
 | Random Forest | 0.736 | 0.899 | 0.674 |
 
 Since Random Forest is the obvious winner in all performance metrics considered, the finalized model is the one built on it. 
+
+## Burdens of This project
+
 
 ## Conclusions / Future-Steps
 
