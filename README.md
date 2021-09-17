@@ -23,12 +23,12 @@ The data is from the [German Traffic Sign Recgonition Benchmark](https://www.kag
 The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
 
 ## Data Distribution
-The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
+
 
 ## Data Augmentation
-The structure of the data is a directory of 40 classes of traffic sign image directories, where each directory class contains different images of a particular sign for a total of over 50,000 images. This directory can be described as a single-image, multi-class classification dataset.
+In a perfect world I would have enough of each class of images (each unique sign) that I wouldn't need to balance the dataset. Since that is not the case, I balanced the dataset by generating new images. I chose to augment the data through resizing, grayscaling, equalization, and normalization. These small changes to copies of the data lets me count them as different images. 
 
-## Convolutional Neural Network
+## Convolutional Neural Network Methodology
 We'll start with a `train_test_split` to get our Training and Test Data.
 
 Our baseline will be a Logistic Regression Model where the features are the track properties columns and the target is the one hot encoded column that denotes if the track is a member of the Hot 100 Chart.
