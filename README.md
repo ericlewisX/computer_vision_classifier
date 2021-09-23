@@ -85,11 +85,4 @@ The problem originates in the data augmentation step.
 
 ## Conclusions / Future-Steps
 
-If a record label was using this Random Forest Model, knowing if a song will be a on Billboard'ss The Hot 100 Chart 70% (accuracy) of the time can be extremely lucrative. 
-
-However, the precision metric score in my opinion is more important than the accuracy. 
-The translation for precision in relation to our objective is:
-* Out of all the tracks that the model predicted made it to the Hot 100, how many actually made it. Our model judged a little under 90%. 
-
-With the foresight that this model can give, the marketing team or an  artist can be more proactive on the songs that actually have a chance at success instead of reactive if a song happens to be a bop.
 
