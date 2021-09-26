@@ -40,7 +40,7 @@ label_csv = 'imagedataset/TrafficSignClassifier/labels.csv'                   # 
 
 if __name__ == "__main__":
        
-    # Load Variables
+    # Load Variables that were saved using the saving_variables.py file
     images_dataset_list = load_variables('images_dataset_list.pickle')
     class_num = load_variables('class_num.pickle')
     shapes = load_variables('shapes.pickle')
@@ -77,9 +77,11 @@ if __name__ == "__main__":
 
     
     # CNN MOdel
-    cnn_img(X_train, y_train, X_validation, y_validation, early_stopping, model_checkpoint)
+    model, history = cnn_img(X_train, y_train, X_validation, y_validation, early_stopping, model_checkpoint)
     
-    
+    score = model.evaluate(X_test, y_test, verbose=0)
+    print('Test Score: ', score[0])
+    print('Test Accuracy: ', score[1])
     
     
     
