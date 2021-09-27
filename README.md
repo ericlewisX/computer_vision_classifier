@@ -41,6 +41,8 @@ As you can see it is extremely imbalanced. To counter this imbalance, I augmente
 ### Data Augmentation
 In a perfect world, I would have enough of each class of images (each unique sign) that I wouldn't need to balance the dataset. Since that is not the case, I balanced the dataset by generating new images. I chose to augment the data through resizing, grayscaling, equalization, and normalization. These small changes to copies of the data let me count them as different images. 
 
+![Original Image](images/70km_per_hour_original.png)![Grayscale Image](images/70km_per_hour_grayscaled.png)![Equalization Image](images/70km_per_hour_equalized.png)![Normalized Image](images/70km_per_hour_normalized.png)
+
 ## Convolutional Neural Network
 #### Koala
 To run our model I used a Convolutional Neural Network (CNN). The basic understanding of how a CNN works can be illustrated from this diagram taken from a [youtube video by CodeBasics](https://www.youtube.com/watch?v=zfiSAzpy9NM&t=739s).
@@ -77,11 +79,36 @@ The results of the model are shown in the table below:
 
 <!-- ![Tkinter App](plots/tkinter.png) -->
 
-## Burdens of This Project and their Solutions
+## Burdens of This Project
 There is one major pitfall to this project which leads to the "misclassification" of some of the signs. Misclassification is in quotes because even though the predictions are incorrect, according to the training data, the model is predicting exactly how it should.
 
-The problem originates in the data augmentation step. 
+The problem originates in the data augmentation step. Sometimes images are generated that even a human cannot confidently identify, so the likelihood that our model can differentiate those augmented images from one another is slim.
 
-## Conclusions / Future-Steps
+![Ambiguous Augmented Image 1](images/ambiguous1.png)![Ambiguous Augmented Image 2](images/ambiguous2.png)![Ambiguous Augmented Image 3](images/ambiguous3.png)
 
+
+## Wrap-Up
+### Solutions
+* Higher Quality Data
+    - e
+* Rolling Datasets
+    - d
+* Higher Quality Cameras
+    - f
+* Increased Training Time / Better Computational Power
+    - g
+
+
+### Conclusion
+This project was more of a proof-of-concept to teach people how their smart cars  differentiate between objects that they see and how it relates to animals' decision-making process.
+
+### Future - Steps
+
+* Object Recognition Project : In Progress
+* Image Classification : ✅
+* Object Localization : In Progress
+* Object Detection : In Progress
+
+* Phone App
+  * This app will be able to use everything above & rest on the dashboard of a car to demonstrate the full computer vision that a smart-car utilizes.
 
