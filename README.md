@@ -89,18 +89,18 @@ The problem originates in the data augmentation step. Sometimes images are gener
 
 ## Wrap-Up
 ### Solutions
-* Higher Quality Data
-    - e
-* Rolling Datasets
-    - d
-* Higher Quality Cameras
-    - f
+The main solution to this problem of ambiguous augmented images would be to skip the Augmentation Step entirely. 
+
+To do this we need an already balanced dataset. Since we'll have to get more images, it would also make sense to update our standards for each image. When forming the new more high-quality balanced dataset the best things to keep in mind are: 
+
+* Higher Quality Data / Cameras
+    - The data used is from a 2011 dataset when a camera's picture quality were lackluster in comparison to today's standards. Higher quality images will let our model be able to draw out more descriptive qualities.
 * Increased Training Time / Better Computational Power
-    - g
+    - This model was ran under a time constraint with a relatively small dataset. In our model we also had to resize the input image to satisfy the time/computational power constraints which limits the amount of information our model can learn. With weeeks/months the model we would generate would be a lot more robust. The top automobile companies would most probably have weeks/months/years to generate highly robust models based on big-data level datasets. 
 
 
 ### Conclusion
-This project was more of a proof-of-concept to teach people how their smart cars  differentiate between objects that they see and how it relates to animals' decision-making process.
+This project was more of a proof-of-concept to teach people how their smart cars identify the objects that they see and how it relates to animals' decision-making process. With a simple convolutional neural network we were able to achieve a 98% accuracy against the test set. 
 
 ### Future - Steps
 
@@ -109,6 +109,6 @@ This project was more of a proof-of-concept to teach people how their smart cars
 * Object Localization : In Progress
 * Object Detection : In Progress
 
-* Phone App
-  * This app will be able to use everything above & rest on the dashboard of a car to demonstrate the full computer vision that a smart-car utilizes.
+* Phone App / Demo
+  * Using a phone that is rested on a car's dashboard, this app will be able to use everything above to demonstrate the full computer vision that a smart-car utilizes.
 
