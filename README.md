@@ -75,7 +75,7 @@ The results of the model are shown in the table below:
 | :--: | :--: | :----: |
 | CNN | 0.0514 | 0.9842 |
 
-![Tkinter App](plots/tkinter.png)
+<!-- ![Tkinter App](plots/tkinter.png) -->
 
 ## Burdens of This Project and their Solutions
 There is one major pitfall to this project which leads to the "misclassification" of some of the signs. Misclassification is in quotes because even though the predictions are incorrect, according to the training data, the model is predicting exactly how it should.
