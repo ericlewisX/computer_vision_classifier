@@ -34,7 +34,7 @@ Infographic of all classes and their corresponding sign.
 ### Data Distribution
 Here is a distribution of the training data after the `train_test_split`.
 
-![Data Distribution Training](plots/DistributionTrainingExamples.png)
+![Data Distribution Training](plots/Sample_Distribution.png)
 
 As you can see it is extremely imbalanced. To counter this imbalance, I augmented our dataset with pseudo-new images.
 
