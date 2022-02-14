@@ -1,7 +1,7 @@
 ![Last Update](https://img.shields.io/badge/last%20change-September%20--%2015%20--%202021%20-yellowgreen)
 # A Glimpse into Automotive Computer Vision Using Convolutional Neural Networks
 Galvanize Capstone Project: A Glimpse into Automotive Computer Vision Using Convolutional Neural Networks
-
+ 
 ## Objective
 The objective of this project is to introduce the field of computer vision and how it is implemented in smart cars. It won't be long until we all have a vehicle with some type of smart technology in it and it would be nice if everyone has a basic understanding of what goes on in the brain of their car. 
 
